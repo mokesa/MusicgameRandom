@@ -1,0 +1,2 @@
+# MusicgameRandom
+音ゲーの機種と難易度を入力したらそこからランダムで出力するDiscordBot
