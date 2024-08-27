@@ -3,11 +3,12 @@ from discord.ext import commands
 from discord import app_commands
 
 TOKEN = 'YOUR_TOKEN'
-client = discord.client()
+intent = discord.Intents.all()
+client = discord.Client(intents=intent)
 tree = discord.app_commands.CommandTree(client)
 
 @tree.command(name="nya", description="にゃーん")
-async def nya(ctx:discord.Intaraction):
+async def nya(ctx:discord.Interaction):
     await ctx.response.send_message("にゃーん")
 
 @client.event
